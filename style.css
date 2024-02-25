@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+body {
+  animation: crazy-background .2s linear infinite;
+  font-family: "Beth Ellen", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+@keyframes crazy-background {
+  0% {
+    background-color: #f2ff00;
+  }
+
+  25% {
+    background-color: #ff58ec;
+  }
+
+  50% {
+    background-color: #000000;
+  }
+
+  75% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: #f2ff00;
+  }
+}
+
+button {
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  background: rgb(121, 9, 106);
+  background: linear-gradient(90deg, rgba(121, 9, 106, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 52%;
+  transition: top 1s, left 1s;
+  z-index: 100;
+}
+
+#transformers {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+#josh {
+  position: absolute;
+  top: 0;
+  right: 40rem;
+  height: 50%;
+}
+
+@keyframes juan-animacion {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rayo-animacion {
+  from {
+    right: -50rem;
+  }
+
+  to {
+    right: 500rem;
+  }
+}
+
+#rayo {
+  position: absolute;
+  z-index: 5;
+  right: -50rem;
+  bottom: 10rem;
+  animation: rayo-animacion 6s linear 5s infinite;
+}
+
+#pollo {
+  position: absolute;
+  right: 20rem;
+  bottom: 10rem;
+  width: 15%;
+  animation: pollo-animacion 2s ease-in-out infinite;
+}
+
+@keyframes pollo-animacion {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(2, 1);
+  }
+
+  75% {
+    transform: scale(2, 2);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+#mondongo {
+  position: absolute;
+  width: 20%;
+  right: 0;
+  bottom: 0;
+}
+
+#juan {
+  width: 25%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 5rem;
+  margin-top: 10rem;
+  animation: juan-animacion 5s linear infinite;
+}
+
+
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slider {
+  overflow: hidden;
+  /* background-color: aqua; */
+  width: auto;
+  height: 30px;
+  /* font-size: 30px; */
+  line-height: 30px;
+  text-align: center;
+}
+
+.slider span {
+  display: block;
+  transition: 0.3s;
+  /* transform: translateY(-600%); */
+  /* animation: infinite slide-animation 2s linear; */
+}
+
+.texto {}
