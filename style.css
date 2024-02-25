@@ -9,7 +9,7 @@ body {
   font-family: "Beth Ellen", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 @keyframes crazy-background {
@@ -135,7 +135,12 @@ button {
   animation: juan-animacion 5s linear infinite;
 }
 
-
+#rana {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate3d(1, 1, 1, -45deg);
+}
 
 .container {
   height: 100vh;
@@ -147,10 +152,8 @@ button {
 
 .slider {
   overflow: hidden;
-  /* background-color: aqua; */
   width: auto;
   height: 30px;
-  /* font-size: 30px; */
   line-height: 30px;
   text-align: center;
 }
@@ -158,8 +161,4 @@ button {
 .slider span {
   display: block;
   transition: 0.3s;
-  /* transform: translateY(-600%); */
-  /* animation: infinite slide-animation 2s linear; */
 }
-
-.texto {}
