@@ -4,6 +4,10 @@ if (avisado === null) {
   window.localStorage.setItem("avisado", "true");
 }
 
+addEventListener("DOMContentLoaded", async () => {
+  document.querySelector(".texto span").textContent = await fetchLesson();
+});
+
 const fetchLesson = async () => {
   const res = await fetch("https://funny-cobra-98.deno.dev/lesson");
   const data = await res.text();
