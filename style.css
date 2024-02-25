@@ -18,6 +18,10 @@ body {
   overflow: hidden;
 }
 
+span {
+  z-index: 50;
+}
+
 @keyframes crazy-background {
   0% {
     background-color: #f2ff00;
@@ -148,7 +152,30 @@ button {
   left: 0;
   z-index: 3;
   bottom: 0;
-  transform: rotate3d(1, 1, 1, -45deg);
+  transform: rotate3d(1, 1, 1, 90deg);
+  animation: rana-animacion 5s linear infinite;
+}
+
+@keyframes rana-animacion {
+  0% {
+    transform: rotate3d(1, 2, 1, 0deg);
+  }
+
+  25% {
+    transform: rotate3d(1, 1, 1, -90deg);
+  }
+
+  50% {
+    transform: rotate3d(1, 1, 1, 45deg);
+  }
+
+  75% {
+    transform: rotate3d(1, 1, 1, 190deg);
+  }
+
+  100% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
 }
 
 .container {
